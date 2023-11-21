@@ -11,11 +11,11 @@
 如果你想添加一个名为helloworld的Shell脚本，那么你应该放到这里：`/data/user/0/com.android.deskclock/files/shell/helloworld.sh`  
 ### 脚本文件与闹钟备注
 新建一个脚本文件，假设你要创建的是"helloworld.sh"，创建完成后，再去新建一个备注与脚本文件名一样的闹钟，闹钟备注名就应该是"helloworld.sh"。闹钟应该铃声为无铃声且取消掉震动（如果你乐意也无所谓）。  
-![闹钟设置](闹钟设置.png)
+![闹钟设置](https://github.com/weixiansen574/AlarmShell/blob/main/%E9%97%B9%E9%92%9F%E8%AE%BE%E7%BD%AE.png)
 ### 授予root权限
 脚本文件一律使用ROOT执行！所以必须先授予闹钟ROOT权限！  
 由于root的申请在闹钟响铃时执行，所以你第一次创建一个脚本后，把闹钟的时间设置在最近的几分钟后，响铃时会申请root权限，允许后就得到了root权限，后续新建其他脚本都无需授权（只要你不关闭或撤销magisk里的root授权即可），root权限申请成功后，就可以将闹钟的时间改为为你想要的时间，到点后即可正常执行你的脚本。
-![](授予闹钟root权限.jpg)  
+![](https://github.com/weixiansen574/AlarmShell/raw/main/%E6%8E%88%E4%BA%88%E9%97%B9%E9%92%9Froot%E6%9D%83%E9%99%90.jpg)  
 ### 建议
 执行脚本前，闹钟响铃的activity界面不会自动关闭，所以你应该添加一个滑动屏幕的命令，将闹铃关闭。当然我相信脚本你都会放在晚上你睡觉的时候让它执行，所以执行完关闭闹钟后，你应该再写一个解锁屏幕的命令，然后再去执行接下来的操作。  
 **示例**
